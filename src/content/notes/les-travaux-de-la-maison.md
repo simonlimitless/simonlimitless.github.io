@@ -3,6 +3,7 @@ title: "Les travaux de la maison"
 description: "Peinture, électricité, plomberie : le point sur le chantier."
 pubDate: 2026-08-28
 tags: ["maison", "travaux"]
+draft: true
 ---
 
 Aujourd'hui j'ai enfin terminé la pièce du fond.
