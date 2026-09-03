@@ -1,5 +1,8 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  // Ton pseudo GitHub : simonlimitless
+  // Dépôt nommé simonlimitless.github.io  ->  pas de "base" à mettre.
+  site: 'https://simonlimitless.github.io',
+});

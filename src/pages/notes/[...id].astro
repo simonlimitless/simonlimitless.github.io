@@ -1,0 +1,42 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('notes');
+  return notes.map((note) => ({
+    params: { id: note.id },
+    props: { note },
+  }));
+}
+
+const { note } = Astro.props;
+const { Content } = await render(note);
+
+const dateFR = note.data.pubDate.toLocaleDateString('fr-FR', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<Base titre={note.data.title} description={note.data.description}>
+  <a class="retour" href="/notes/">← Toutes les notes</a>
+
+  <article>
+    <h1>{note.data.title}</h1>
+    <p class="meta">
+      <time datetime={note.data.pubDate.toISOString()}>{dateFR}</time>
+    </p>
+
+    {note.data.image && <img src={note.data.image} alt="" />}
+
+    <Content />
+
+    {note.data.tags.length > 0 && (
+      <div class="etiquettes" style="margin-top:40px">
+        {note.data.tags.map((t) => <a href={`/tags/${t}/`}>#{t}</a>)}
+      </div>
+    )}
+  </article>
+</Base>

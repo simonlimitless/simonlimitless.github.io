@@ -1,0 +1,54 @@
+---
+import '../styles/global.css';
+
+const { titre, description = 'Mes notes personnelles.' } = Astro.props;
+const nomDuSite = 'simonlimitless';
+---
+
+<!doctype html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{titre ? `${titre} — ${nomDuSite}` : nomDuSite}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script is:inline>
+      // Applique le thème avant l'affichage pour éviter le clignotement.
+      const memo = localStorage.getItem('theme');
+      const sombre = memo ? memo === 'dark'
+        : matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = sombre ? 'dark' : 'light';
+    </script>
+  </head>
+
+  <body>
+    <div class="enveloppe">
+      <header class="site">
+        <a class="marque" href="/">{nomDuSite}</a>
+        <nav>
+          <a href="/notes/">Toutes les notes</a>
+          <a href="/a-propos/">À propos</a>
+        </nav>
+        <button id="bascule-theme" type="button" aria-label="Changer de thème">◐</button>
+      </header>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer class="site">
+        <p>© {new Date().getFullYear()} — Écrit en Markdown, publié avec Astro et GitHub Pages.</p>
+      </footer>
+    </div>
+
+    <script is:inline>
+      document.getElementById('bascule-theme').addEventListener('click', () => {
+        const html = document.documentElement;
+        const nouveau = html.dataset.theme === 'dark' ? 'light' : 'dark';
+        html.dataset.theme = nouveau;
+        localStorage.setItem('theme', nouveau);
+      });
+    </script>
+  </body>
+</html>
