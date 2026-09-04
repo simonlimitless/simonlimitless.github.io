@@ -47,11 +47,11 @@ tags: ["recette", "pâtisserie", "cookies"]
 
 ## Cuisson
 
-**Four préchauffé à 165 °C chaleur tournante — 10 à 12 min** (8 à 12 min selon les fours).
+**Four préchauffé à 165 °C chaleur tournante : 10 à 12 min** (8 à 12 min selon les fours).
 
 Enfourner les boules **encore congelées**, bien espacées, sans jamais les aplatir.
 
-> 🎯 **Le bon moment pour sortir la plaque :** les bords sont pris, le centre paraît encore un peu cru et légèrement sous-cuit. C'est normal — la cuisson se termine sur la plaque.
+> 🎯 **Le bon moment pour sortir la plaque :** les bords sont pris, le centre paraît encore un peu cru et légèrement sous-cuit. C'est normal, la cuisson se termine sur la plaque.
 
 ### Dès la sortie du four
 
@@ -61,10 +61,10 @@ Enfourner les boules **encore congelées**, bien espacées, sans jamais les apla
 
 ## Les astuces qui changent tout
 
-- **Ne pas surtravailler la pâte après la farine** — c'est ce qui garde la mie tendre.
-- **Grosses boules, jamais aplaties** — l'épaisseur fait tout le contraste bords/cœur.
+- **Ne pas surtravailler la pâte après la farine** : c'est ce qui garde la mie tendre.
+- **Grosses boules, jamais aplaties** : l'épaisseur fait tout le contraste bords/cœur.
 - **Le froid avant cuisson** empêche les cookies de s'étaler : ils restent hauts.
-- **165 °C, c'est volontairement bas** — le cœur reste fondant pendant que les bords colorent.
+- **165 °C, c'est volontairement bas** : le cœur reste fondant pendant que les bords colorent.
 - **Le chocolat ajouté après cuisson** garde son brillant et son croquant, contrairement aux pépites fondues.
 - **Sous-cuire légèrement** est la règle : un cookie qui semble parfait dans le four sera sec une fois refroidi.
 
@@ -73,7 +73,7 @@ Enfourner les boules **encore congelées**, bien espacées, sans jamais les apla
 | Étape | Repère |
 |---|---|
 | Poids par boule | 80 g (×15) · 100 g (×12) · idéal 90–110 g |
-| Congélateur | 1 h min. — une nuit c'est mieux |
+| Congélateur | 1 h min. une nuit c'est mieux |
 | Four | 165 °C chaleur tournante |
 | Cuisson | 10 à 12 min |
 | Repos sur plaque | 15 à 20 min |
