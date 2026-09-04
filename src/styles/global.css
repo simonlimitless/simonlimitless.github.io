@@ -204,6 +204,13 @@ article img { max-width: 100%; height: auto; border-radius: 14px; }
 
 article h2 { margin-top: 44px; }
 
+article h3 {
+  font-size: 18.5px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 34px 0 12px;
+}
+
 article a { color: var(--bleu); font-weight: 500; }
 
 article blockquote {
@@ -233,6 +240,44 @@ article code {
 }
 
 article pre code { background: none; border: 0; padding: 0; }
+
+/* ---------- Tableaux ---------- */
+article table {
+  width: 100%;
+  margin: 26px 0;
+  font-size: 15.5px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--trait);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+article thead th {
+  background: var(--fond-doux);
+  color: var(--doux);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  text-align: left;
+  white-space: nowrap;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--trait);
+}
+
+article tbody td {
+  padding: 12px 16px;
+  vertical-align: top;
+  border-bottom: 1px solid var(--trait);
+}
+
+article tbody tr:last-child td { border-bottom: 0; }
+
+article tbody tr:hover { background: var(--fond-doux); }
+
+/* La première colonne porte l'information principale. */
+article tbody td:first-child { font-weight: 600; }
 
 /* ---------- Recherche ---------- */
 #recherche {
@@ -284,4 +329,9 @@ a.retour:hover { color: var(--bleu); }
   .chapeau { font-size: 17px; margin-bottom: 32px; }
   .enveloppe { padding: 0 18px 70px; }
   header.site { gap: 12px; margin-bottom: 34px; }
+
+  /* Les tableaux larges défilent horizontalement au lieu de déborder. */
+  article table { display: block; overflow-x: auto; font-size: 15px; }
+  article thead th,
+  article tbody td { padding: 10px 12px; }
 }
